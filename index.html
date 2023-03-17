@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surviving Mars</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        
+        <!-- Add this code inside the "game-container" div -->
+        <div id="custom-alert" class="modal">
+          <div class="modal-content">
+            <p id="alert-message"></p>
+            <button id="alert-close">OK</button>
+          </div>
+        </div>
+        
+        <h1>Surviving Mars</h1>
+        
+        <div id="stats">
+            <p>Health: <span id="health">4</span></p>
+            <p>Oxygen: <span id="oxygen">5</span></p>
+            <p>Food: <span id="food">4</span></p>
+        </div>
+        <div id="story-container"></div>
+        <div id="encounter">
+            <h2 id="encounter-title"></h2>
+            <p id="encounter-description"></p>
+            <p id="outcome-message"></p>
+            <div id="choices">
+                <button id="choice1"></button>
+                <button id="choice2"></button>
+            </div>
+        </div>
+
+        <!-- Add the start-restart-wrapper div and start-restart button -->
+        <div class="start-restart-wrapper">
+            <button id="start-game" class="start-restart">Start Game</button>
+        </div>
+		<footer>Created by <a href="https://twitter.com/GameMinimalist">@GameMinimalist</a> in conjuction with ChatGPT</footer>
+    </div>
+	
+    <script src="script.js"></script>
+</body>
+</html>
